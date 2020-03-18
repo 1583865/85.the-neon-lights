@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>霓虹灯</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./font.css">
+	<link rel="stylesheet" type="text/css" href="./demo.css">
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			background-color: #000;
+		}
+		.neon-wrap {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			text-align: center;
+		}
+		.neon-wrap span {
+			display: block;
+		}
+		.neon-text {
+			font-family: "Monoton",cursive;
+			font-size: 100px;
+			animation: neon 1s infinite;
+
+		}
+		.neon-by{
+			color: #e91e63;
+			text-shadow: -3px 0px 5px #e91e63, 0px 0px 2px #e91e63;
+		}
+
+		@keyframes neon {
+			0%,30%,32%,34% {
+				color: #222;
+			text-shadow: -3px 0px 5px #222, 0px 0px 2px #222;
+			}
+			31%,33%,35%,100% {
+				color: #e91e63;
+			text-shadow: -3px 0px 5px #e91e63, 0px 0px 2px #e91e63;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="neon-wrap">
+		<span class="neon-text">
+			zlh
+		</span>
+		<span class="neon-by">by @zlh</span>
+	</div>
+</body>
+</html>
